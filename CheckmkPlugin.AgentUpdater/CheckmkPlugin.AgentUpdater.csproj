@@ -1,0 +1,37 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <!-- Windows-only: WinRM/PowerShell-Remoting. Directory.Build.props-Default
+         (net10.0) wird ueberschrieben. Cockpit selbst ist auch net10.0-windows —
+         gleiche TFM = das Plugin laedt sauber. -->
+    <TargetFramework>net10.0-windows10.0.19041.0</TargetFramework>
+    <RuntimeIdentifiers>win-x64</RuntimeIdentifiers>
+    <EnableWindowsTargeting>true</EnableWindowsTargeting>
+    <OutputType>Library</OutputType>
+    <AvaloniaUseCompiledBindingsByDefault>true</AvaloniaUseCompiledBindingsByDefault>
+
+    <!-- Kein Copy-Local fuer Avalonia-Runtime-DLLs — der Cockpit bringt Avalonia
+         selbst mit, das Plugin haengt nur zur Compile-Zeit dran. -->
+    <CopyLocalLockFileAssemblies>false</CopyLocalLockFileAssemblies>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Avalonia" />
+    <PackageReference Include="Avalonia.Desktop" />
+    <PackageReference Include="Avalonia.Themes.Fluent" />
+    <PackageReference Include="CommunityToolkit.Mvvm" />
+    <PackageReference Include="Microsoft.Extensions.DependencyInjection.Abstractions" />
+    <PackageReference Include="NLog" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <!-- Plugin-Contracts als committed DLL (siehe ../deps/README.md).
+         Private=false, damit die DLL NICHT ins Plugin-bin/ landet — der Cockpit
+         bringt sie schon selbst mit. -->
+    <Reference Include="Checkmk.PluginContracts">
+      <HintPath>..\deps\Checkmk.PluginContracts.dll</HintPath>
+      <Private>false</Private>
+    </Reference>
+  </ItemGroup>
+
+</Project>
