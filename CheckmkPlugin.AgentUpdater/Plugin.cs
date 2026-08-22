@@ -17,7 +17,7 @@ public sealed class Plugin : IPlugin
         Version: ThisAssembly.Version,
         Description: "Aktualisiert den Checkmk-Agent auf entfernten Windows-Hosts per Remote-PowerShell.",
         Author: "Kroste",
-        UpdateChannelUrl: "https://api.github.com/repos/Kroste/Checkmk-Plugin-AgentUpdater/releases/latest");
+        UpdateChannelUrl: "https://api.github.com/repos/LHP542/Checkmk-Plugin-AgentUpdater/releases/latest");
 
     public void Register(IServiceCollection services, IPluginContext context)
     {

@@ -7,7 +7,7 @@
     <ImplicitUsings>enable</ImplicitUsings>
     <Authors>Lars Oste (Kroste)</Authors>
     <Company>Kroste</Company>
-    <RepositoryUrl>https://github.com/Kroste/Checkmk-Plugin-AgentUpdater</RepositoryUrl>
+    <RepositoryUrl>https://github.com/LHP542/Checkmk-Plugin-AgentUpdater</RepositoryUrl>
     <RepositoryType>git</RepositoryType>
     <TreatWarningsAsErrors>true</TreatWarningsAsErrors>
     <EnforceCodeStyleInBuild>false</EnforceCodeStyleInBuild>

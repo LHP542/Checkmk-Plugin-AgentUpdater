@@ -1,6 +1,9 @@
 # Checkmk-Plugin-AgentUpdater
 
-Plugin für das [Checkmk Cockpit](https://github.com/Kroste/Checkmk), das die
+> Projekt der **Arbeitsgruppe 5424 IT-Basis-Dienste** der Landeshauptstadt Potsdam.
+> Alle dienstlichen Repos liegen in der GitHub-Organisation [LHP542](https://github.com/LHP542).
+
+Plugin für das [Checkmk Cockpit](https://github.com/LHP542/Checkmk), das die
 **Client-Aktualisierung** (Checkmk-Agent-Update auf entfernten Windows-Hosts
 per Remote-PowerShell) als Kontextmenü-Eintrag bereitstellt.
 
@@ -9,7 +12,7 @@ aktualisieren…" nicht mehr — nur wer das Plugin installiert hat, sieht ihn.
 
 ## Installation
 
-1. Neuestes ZIP von den [Releases](https://github.com/Kroste/Checkmk-Plugin-AgentUpdater/releases)
+1. Neuestes ZIP von den [Releases](https://github.com/LHP542/Checkmk-Plugin-AgentUpdater/releases)
    herunterladen (`Checkmk-Plugin-AgentUpdater-x.y.z.zip`).
 2. Entpacken. Die enthaltene `CheckmkPlugin.AgentUpdater.dll` in den Ordner
    `plugins/` **neben** deiner `Checkmk.App.exe` legen. Ordner ggf. anlegen.
@@ -98,6 +101,6 @@ Checkmk-Plugin-AgentUpdater/
 └── Checkmk-Plugin-AgentUpdater.slnx
 ```
 
-## Fachbereich
+## Arbeitsgruppe
 
 5424 IT-Basis-Dienste (LHP)
